@@ -26,8 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.header__img {
+header .header__img {
   width: 101px;
   margin-left: 5px;
 }

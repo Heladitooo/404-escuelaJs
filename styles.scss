@@ -1,5 +1,7 @@
 $fondo-header: #222222;
-$fondo: linear-gradient(to top ,#1d1d1d 0%, black 100%) ;
+$fondo: linear-gradient(to top ,#1d1d1d 0%, black 100%);
+$fondo-r: linear-gradient(to top ,#1d1d1d 0%, #b63f3f 100%);
+
 
 body
 {
@@ -15,7 +17,7 @@ body
 {
     0%
     {
-        background: linear-gradient(to top ,#1d1d1d 0%, #b63f3f 100%);
+        background: $fondo-r;
     }
     90%
     {
@@ -24,7 +26,7 @@ body
     }
     100%
     {
-        background: linear-gradient(to top ,#1d1d1d 0%, #b63f3f 100%);
+        background: $fondo-r;
     }
 }
 
@@ -36,14 +38,12 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
+        .header__img
+        {
+            width: 101px;
+            margin-left: 5px;
+        }
 }
-
-.header__img
-{
-    width: 101px;
-    margin-left: 5px;
-}
-
 
 .error404 
 {
