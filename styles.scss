@@ -1,0 +1,89 @@
+$fondo-header: #222222;
+$fondo: linear-gradient(to top ,#1d1d1d 0%, black 100%) ;
+
+body
+{
+    margin: 0;
+    background: $fondo;
+    font-family: 'Roboto', sans-serif;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: AhB
+}
+
+@keyframes AhB
+{
+    0%
+    {
+        background: linear-gradient(to top ,#1d1d1d 0%, #b63f3f 100%);
+    }
+    90%
+    {
+        background: $fondo;
+
+    }
+    100%
+    {
+        background: linear-gradient(to top ,#1d1d1d 0%, #b63f3f 100%);
+    }
+}
+
+ header
+{
+    background-color: $fondo-header;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img
+{
+    width: 101px;
+    margin-left: 5px;
+}
+
+
+.error404 
+{
+    color: white;
+    display: grid;
+    height: calc(100vh - 55px);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+        .error404__container
+        {
+            display: grid;
+            justify-items: center;
+        }
+        .error404__container h1 ,.error404__container h4
+        {
+            margin: 0;
+        }
+        .error404__container h1
+        {
+            font-size: 1000%;
+            animation-duration: 1s;
+            animation-name: Ah1;
+            animation-iteration-count: infinite;
+        }
+}
+
+
+@keyframes Ah1
+{
+    0%
+    {
+        transform: scale(1.1);
+    }
+    90%
+    {
+        transform: scale(1.0);
+    }
+    100%
+    {
+        transform: scale(1.1);
+    }
+}
